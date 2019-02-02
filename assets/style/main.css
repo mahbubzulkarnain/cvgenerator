@@ -1,0 +1,162 @@
+html, body {
+    margin: 0;
+    margin-top: 15px;
+    padding: 0;
+    font-size: 13px;
+}
+
+a, a:active, a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/*
+basic information
+*/
+.basic-information {
+    margin-bottom: 30px;
+}
+
+/*
+avatar
+*/
+.basic-information .avatar img {
+    max-width: 100%;
+}
+
+/*
+fullname
+*/
+.basic-information .fullname {
+    display: flex;
+}
+
+.basic-information .fullname #actionFullname {
+    margin-left: 10px;
+    align-self: center;
+    display: none;
+}
+
+.basic-information .fullname:hover #actionFullname {
+    display: block;
+}
+
+/*
+subheading
+*/
+.basic-information .subheading {
+    display: flex;
+}
+
+.basic-information .subheading #btnEditSubheading {
+    margin-left: 10px;
+    align-self: center;
+    display: none;
+}
+
+.basic-information .subheading:hover #btnEditSubheading {
+    display: block;
+}
+
+/*
+description
+*/
+.basic-information .description {
+    margin-bottom: 13px;
+}
+
+.basic-information .description #description p {
+    margin: 0;
+}
+
+.basic-information .description .action-description {
+    direction: rtl;
+}
+
+.basic-information .description #btnEditDescription {
+    display: none;
+}
+
+.basic-information .description:hover #actionDescription #btnEditDescription {
+    display: block;
+}
+
+/*
+contact
+*/
+.basic-information .contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.basic-information .contact .fas {
+    margin-right: 5px;
+}
+
+.basic-information .contact .telp .action-telp,
+.basic-information .contact .email .action-email,
+.basic-information .contact .website .action-website {
+    display: none;
+}
+
+.basic-information .contact .telp:hover .action-telp,
+.basic-information .contact .email:hover .action-email,
+.basic-information .contact .website:hover .action-website {
+    display: inline-block;
+}
+
+/*
+work experience
+*/
+
+.wrapper-work-experience .work-experience .action-work-experience-item,
+.wrapper-education .education .action-education-item {
+    direction: rtl;
+}
+
+.wrapper-work-experience .work-experience .action-work-experience-item button,
+.wrapper-education .education .action-education-item button {
+    display: block;
+}
+
+.wrapper-work-experience .work-experience .work-experience-item .date,
+.wrapper-education .education .education-item .date {
+    font-weight: normal;
+    font-size: medium;
+    vertical-align: middle;
+    font-style: italic;
+}
+
+.wrapper-work-experience .action-work-experience button,
+.wrapper-education .action-education button {
+    width: 100%;
+    display: none;
+}
+
+.wrapper-work-experience:hover .action-work-experience button,
+.wrapper-education:hover .action-education button {
+    display: block;
+}
+
+.wrapper-work-experience .work-experience .work-experience-item [id^="actionBtnWorkExperienceItem"],
+.wrapper-education .education .education-item [id^="actionBtnEducationItem"] {
+    display: none;
+}
+
+/*
+education
+*/
+
+
+/*navbar*/
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 10px;
+}
+
+.navbar ul li {
+    text-align: right;
+    list-style: none;
+    display: inline-block;
+}
