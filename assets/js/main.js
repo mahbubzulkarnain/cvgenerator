@@ -38,7 +38,7 @@ function fullnameShowInput() {
 
 function fullnameHideInput(isSave = false) {
     let elem = document.getElementById(`wrapperFullname`);
-    elem.style.width = '-moz-fit-content';
+    elem.style.width = 'unset';
     if (isSave) {
         model_portfolio.set.item.fullname(document.getElementById('inputFullname').value);
     }
@@ -79,7 +79,7 @@ function subheadingShowInput() {
 
 function subheadingHideInput(isSave = false) {
     let elem = document.getElementById(`wrapperSubheading`);
-    elem.style.width = '-moz-fit-content';
+    elem.style.width = 'unset';
     if (isSave) {
         model_portfolio.set.item.subheading(document.getElementById('inputSubheading').value);
     }
@@ -161,7 +161,7 @@ function telpShowInput() {
 
 function telpHideInput(isSave = false) {
     let elem = document.getElementById(`telp`);
-    elem.style.width = '-moz-fit-content';
+    elem.style.width = 'unset';
     if (isSave) {
         model_portfolio.set.item.telp(document.getElementById('inputTelp').value);
     }
@@ -197,7 +197,7 @@ function emailShowInput() {
 
 function emailHideInput(isSave = false) {
     let elem = document.getElementById(`email`);
-    elem.style.width = '-moz-fit-content';
+    elem.style.width = 'unset';
     if (isSave) {
         model_portfolio.set.item.email(document.getElementById('inputEmail').value);
     }
@@ -233,7 +233,7 @@ function websiteShowInput() {
 
 function websiteHideInput(isSave = false) {
     let elem = document.getElementById(`website`);
-    elem.style.width = '-moz-fit-content';
+    elem.style.width = 'unset';
     if (isSave) {
         model_portfolio.set.item.website(document.getElementById('inputWebsite').value);
     }
